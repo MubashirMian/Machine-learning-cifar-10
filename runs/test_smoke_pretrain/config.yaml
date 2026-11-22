@@ -1,0 +1,14 @@
+experiment_id: test_smoke_pretrain
+data_dir: data
+split_dir: data/splits
+subset_fraction: 0.01
+batch_size: 32
+epochs: 3
+warmup_epochs: 1
+lr: 0.1
+optimizer: sgd
+temperature: 0.5
+normalize: true
+num_workers: 0
+wandb: false
+seed: 42

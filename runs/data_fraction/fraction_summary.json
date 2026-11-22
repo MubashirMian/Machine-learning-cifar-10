@@ -1,0 +1,50 @@
+[
+  {
+    "fraction": 1.0,
+    "seed": 42,
+    "train_samples": 45000,
+    "pretrain_epochs": 50,
+    "linear_epochs": 40,
+    "test_top1": 75.22999999999999,
+    "test_top5": 98.71,
+    "val_top1": 75.66000000000001,
+    "pretrain_exp_id": "pretrain_cifar10_s6_seed42",
+    "linear_exp_id": "linear_eval_cifar10_s6_seed42"
+  },
+  {
+    "fraction": 0.1,
+    "seed": 42,
+    "train_samples": 4500,
+    "pretrain_epochs": 50,
+    "linear_epochs": 40,
+    "test_top1": 54.169999999999995,
+    "test_top5": 94.52000000000001,
+    "val_top1": 56.2,
+    "pretrain_exp_id": "pretrain_frac10_seed42",
+    "linear_exp_id": "linear_frac10_seed42"
+  },
+  {
+    "fraction": 0.25,
+    "seed": 42,
+    "train_samples": 11250,
+    "pretrain_epochs": 50,
+    "linear_epochs": 40,
+    "test_top1": 65.36999999999999,
+    "test_top5": 97.14,
+    "val_top1": 65.64,
+    "pretrain_exp_id": "pretrain_frac25_seed42",
+    "linear_exp_id": "linear_frac25_seed42"
+  },
+  {
+    "fraction": 0.5,
+    "seed": 42,
+    "train_samples": 22500,
+    "pretrain_epochs": 50,
+    "linear_epochs": 40,
+    "test_top1": 71.04,
+    "test_top5": 98.07000000000001,
+    "val_top1": 72.08,
+    "pretrain_exp_id": "pretrain_frac50_seed42",
+    "linear_exp_id": "linear_frac50_seed42"
+  }
+]

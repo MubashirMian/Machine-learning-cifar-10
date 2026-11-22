@@ -1,0 +1,44 @@
+# S6 Main Reproduction — Full CIFAR-10 Pretraining Config
+# Approved: 2026-11-18 | Decision: D02 (Adam), D05 (50 epochs, ~2.9h MPS)
+# Run with: PYTHONPATH=. .venv/bin/python src/simclr/train_pretrain.py --config configs/pretrain_cifar10.yaml
+
+experiment_id: "pretrain_cifar10_s6_seed42"
+seed: 42
+
+# Data
+data_dir: "data"
+split_dir: "data/splits"
+pretrain_pool: 45000          # 45k train images (5k val held out)
+batch_size: 256
+num_workers: 4
+
+# Augmentation (§4.1)
+color_jitter_strength: 0.5
+use_blur: false
+
+# Architecture (§4.2, §4.3)
+projection_dim: 128
+
+# Loss (§4.4)
+temperature: 0.5              # Official CIFAR-10 command value
+
+# Optimizer (D02: Adam wins pilot P3 by +2% over SGD)
+optimizer: "adam"
+lr: 0.001
+weight_decay: 1.0e-4
+exclude_bn_bias: true
+
+# LR schedule
+warmup_epochs: 10
+epochs: 50                    # Approved budget: ~2.9h on Apple M4 Pro MPS at 217.7 img/s
+
+# Checkpointing
+save_dir: "runs/pretrain_cifar10_s6_seed42"
+save_every_n_epochs: 5
+
+# Logging
+wandb: true
+wandb_project: "simclr-cifar10"
+wandb_entity: "mubashirmian199-iba-institute-of-business-administration"
+wandb_tags: ["s6", "main-reproduction", "seed42"]
+log_contrastive_acc: true

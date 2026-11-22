@@ -1,0 +1,27 @@
+experiment_id: pretrain_cifar10_s6_seed42
+seed: 42
+data_dir: data
+split_dir: data/splits
+pretrain_pool: 45000
+batch_size: 256
+num_workers: 4
+color_jitter_strength: 0.5
+use_blur: false
+projection_dim: 128
+temperature: 0.5
+optimizer: adam
+lr: 0.001
+weight_decay: 0.0001
+exclude_bn_bias: true
+warmup_epochs: 10
+epochs: 50
+save_dir: runs/pretrain_cifar10_s6_seed42
+save_every_n_epochs: 5
+wandb: true
+wandb_project: simclr-cifar10
+wandb_entity: mubashirmian199-iba-institute-of-business-administration
+wandb_tags:
+- s6
+- main-reproduction
+- seed42
+log_contrastive_acc: true

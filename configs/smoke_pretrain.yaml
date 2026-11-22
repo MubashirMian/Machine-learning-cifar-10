@@ -1,0 +1,17 @@
+experiment_id: smoke_pretrain
+hypothesis: "Smoke test verifying end-to-end pretraining and loss decrease"
+data_dir: data
+split_dir: data/splits
+subset_fraction: 0.01
+batch_size: 32
+epochs: 2
+warmup_epochs: 1
+lr: 0.1
+optimizer: sgd
+momentum: 0.9
+weight_decay: 0.0001
+temperature: 0.5
+normalize: true
+num_workers: 0
+wandb: true
+seed: 42

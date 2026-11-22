@@ -1,0 +1,13 @@
+experiment_id: linear_frac25_seed42
+data_dir: data
+split_dir: data/splits
+encoder_checkpoint: runs/pretrain_frac25_seed42/best.pt
+batch_size: 512
+epochs: 40
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0
+normalize: true
+num_workers: 6
+wandb: false
+seed: 42

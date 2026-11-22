@@ -1,0 +1,15 @@
+experiment_id: pretrain_frac25_seed42
+data_dir: data
+split_dir: data/splits
+subset_fraction: 0.25
+batch_size: 256
+epochs: 50
+warmup_epochs: 10
+lr: 0.001
+optimizer: adam
+weight_decay: 0.0001
+temperature: 0.5
+normalize: true
+num_workers: 4
+wandb: false
+seed: 42

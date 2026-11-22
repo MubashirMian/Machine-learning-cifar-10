@@ -1,0 +1,14 @@
+experiment_id: smoke_linear
+hypothesis: "Smoke test verifying end-to-end downstream linear evaluation on frozen encoder"
+data_dir: data
+split_dir: data/splits
+encoder_checkpoint: runs/smoke_pretrain/best.pt
+batch_size: 64
+epochs: 2
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0
+normalize: true
+num_workers: 0
+wandb: true
+seed: 42

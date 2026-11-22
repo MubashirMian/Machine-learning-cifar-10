@@ -1,0 +1,14 @@
+{
+  "run_id": "linear_pilot_P1_SGD_lr0.1_tau0.5",
+  "encoder_checkpoint": "runs/pilot_P1_SGD_lr0.1_tau0.5/best.pt",
+  "best_val_top1": 36.42,
+  "test_top1": 36.63,
+  "test_top5": 85.81,
+  "test_loss": 1.7667451225280761,
+  "epochs": 5,
+  "batch_size": 256,
+  "lr": 0.1,
+  "optimizer": "sgd",
+  "total_time_sec": 207.15182304382324,
+  "device": "mps"
+}

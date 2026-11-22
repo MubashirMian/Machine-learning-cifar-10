@@ -1,0 +1,14 @@
+{
+  "run_id": "linear_frac50_seed42",
+  "encoder_checkpoint": "runs/pretrain_frac50_seed42/best.pt",
+  "best_val_top1": 72.08,
+  "test_top1": 71.04,
+  "test_top5": 98.07000000000001,
+  "test_loss": 0.8170851215362549,
+  "epochs": 40,
+  "batch_size": 512,
+  "lr": 0.1,
+  "optimizer": "sgd",
+  "total_time_sec": 4376.753366231918,
+  "device": "mps"
+}

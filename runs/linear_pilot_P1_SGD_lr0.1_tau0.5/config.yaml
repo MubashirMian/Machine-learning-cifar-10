@@ -1,0 +1,13 @@
+experiment_id: linear_pilot_P1_SGD_lr0.1_tau0.5
+data_dir: data
+split_dir: data/splits
+encoder_checkpoint: runs/pilot_P1_SGD_lr0.1_tau0.5/best.pt
+batch_size: 256
+epochs: 5
+lr: 0.1
+momentum: 0.9
+weight_decay: 0.0
+normalize: true
+num_workers: 2
+wandb: false
+seed: 42

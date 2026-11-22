@@ -1,0 +1,5 @@
+fraction,seed,train_samples,pretrain_epochs,linear_epochs,test_top1,test_top5,val_top1,pretrain_exp_id,linear_exp_id
+0.1,42,4500,50,40,54.169999999999995,94.52000000000001,56.2,pretrain_frac10_seed42,linear_frac10_seed42
+0.25,42,11250,50,40,65.36999999999999,97.14,65.64,pretrain_frac25_seed42,linear_frac25_seed42
+0.5,42,22500,50,40,71.04,98.07000000000001,72.08,pretrain_frac50_seed42,linear_frac50_seed42
+1.0,42,45000,50,40,75.22999999999999,98.71,75.66000000000001,pretrain_cifar10_s6_seed42,linear_eval_cifar10_s6_seed42

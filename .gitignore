@@ -1,0 +1,61 @@
+# Data (never commit or upload datasets)
+data/
+data/**
+**/cifar-10/
+**/cifar-10/**
+**/train/
+**/test/
+*.tar.gz
+*.tar
+*.zip
+*.bin
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+runs/**/*.pt
+runs/**/*.pth
+
+# Python & Environment
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Observability
+wandb/
+phoenix/
+
+# OS & IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.ipynb_checkpoints/
+hf_space/

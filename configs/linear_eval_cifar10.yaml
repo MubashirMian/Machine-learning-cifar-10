@@ -1,0 +1,38 @@
+# S6 Linear Evaluation Config — Full CIFAR-10
+# Run after pretraining completes.
+# Run with: PYTHONPATH=. .venv/bin/python src/simclr/train_linear.py --config configs/linear_eval_cifar10.yaml
+
+experiment_id: "linear_eval_cifar10_s6_seed42"
+seed: 42
+
+# Data
+data_dir: "data"
+split_dir: "data/splits"
+batch_size: 512
+num_workers: 6
+
+# Pretrained encoder (produced by S6 pretrain)
+encoder_checkpoint: "runs/pretrain_cifar10_s6_seed42/best.pt"
+
+# Linear classifier (§4.6)
+num_classes: 10
+freeze_encoder: true
+
+# Optimizer (§4.6 — repo uses SGD lr=0.1, no weight decay for linear eval)
+optimizer: "sgd"
+lr: 0.1
+weight_decay: 0.0
+momentum: 0.9
+
+# Schedule
+warmup_epochs: 0
+epochs: 100
+
+# Output
+save_dir: "runs/linear_eval_cifar10_s6_seed42"
+
+# Logging
+wandb: true
+wandb_project: "simclr-cifar10"
+wandb_entity: "mubashirmian199-iba-institute-of-business-administration"
+wandb_tags: ["s6", "linear-eval", "seed42"]

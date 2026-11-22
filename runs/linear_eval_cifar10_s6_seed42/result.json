@@ -1,0 +1,14 @@
+{
+  "run_id": "linear_eval_cifar10_s6_seed42",
+  "encoder_checkpoint": "runs/pretrain_cifar10_s6_seed42/best.pt",
+  "best_val_top1": 75.66000000000001,
+  "test_top1": 75.22999999999999,
+  "test_top5": 98.71,
+  "test_loss": 0.6990256319999695,
+  "epochs": 40,
+  "batch_size": 512,
+  "lr": 0.1,
+  "optimizer": "sgd",
+  "total_time_sec": 4029.522101163864,
+  "device": "mps"
+}
