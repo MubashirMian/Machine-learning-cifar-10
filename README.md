@@ -1,4 +1,4 @@
-# SimCLR (v1) on CIFAR-10: PyTorch Implementation & Data-Scaling Experiment
+#  A Simple Framework for Contrastive Learning of Visual Representations
 
 A clean, modular PyTorch reproduction and data-efficiency study of **SimCLR** (*A Simple Framework for Contrastive Learning of Visual Representations*, Chen et al., ICML 2020) on the CIFAR-10 dataset, featuring an interactive inference web app deployed via Streamlit.
 
